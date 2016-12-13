@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					32F9530F1DEB59CA0001CA33 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 77BY68R34P;
 						ProvisioningStyle = Automatic;
 					};
 					32F953261DEB59CA0001CA33 = {
@@ -416,7 +417,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77BY68R34P;
 				INFOPLIST_FILE = drinkPrice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cam.drinkPrice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,7 +431,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77BY68R34P;
 				INFOPLIST_FILE = drinkPrice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cam.drinkPrice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +514,7 @@
 				32F9533D1DEB59CA0001CA33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32F9533E1DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "drinkPriceTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +523,7 @@
 				32F953401DEB59CA0001CA33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32F953411DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "drinkPriceUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +532,7 @@
 				32F953431DEB59CA0001CA33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
