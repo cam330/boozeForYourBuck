@@ -27,27 +27,23 @@ class ViewController: UIViewController {
     
     @IBOutlet var alcPerDollarLabel1: UILabel!
     
-    @IBOutlet var resetButton: UIButton!
+//    @IBOutlet var resetButton: UIButton!
     @IBOutlet var alcPerDollarLabel2: UILabel!
 
     @IBOutlet var drink1View: UIView!
     @IBOutlet var drink2View: UIView!
-    
-    @IBOutlet var drink1ProgressView: UIProgressView!
-    @IBOutlet var drink2ProgressView: UIProgressView!
+
     
     
     @IBOutlet var calculateButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        self.drink1ProgressView.isHidden = true
-        self.drink2ProgressView.isHidden = true
+
         
         oz1.becomeFirstResponder();
         
-        resetButton.isHidden = true
+//        resetButton.isHidden = true
         
         if(oz1.text != ""){
             calculateButton.isHidden = true
@@ -57,11 +53,14 @@ class ViewController: UIViewController {
         self.drink1View.layer.shadowOpacity = 0.2
         self.drink1View.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         self.drink1View.layer.shadowRadius = 1
+        self.drink1View.layer.cornerRadius = 4
         
         self.drink2View.layer.shadowColor = UIColor.black.cgColor
         self.drink2View.layer.shadowOpacity = 0.2
         self.drink2View.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         self.drink2View.layer.shadowRadius = 1
+        self.drink2View.layer.cornerRadius = 4
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -102,39 +101,22 @@ class ViewController: UIViewController {
             alcPerDollarLabel1.font = alcPerDollarLabel1.font.withSize(20)
         }
         
-        alcPerDollarLabel1.text = String(format: "1: %.3foz. ALC Per Dollar", total1)
-        alcPerDollarLabel2.text = String(format: "2: %.3foz. ALC Per Dollar", total2)
-            
-         self.drink1ProgressView.isHidden = false
-         self.drink2ProgressView.isHidden = false
+        alcPerDollarLabel1.text = String(format: "%.3foz. ALC / $", total1)
+        alcPerDollarLabel2.text = String(format: "%.3foz. ALC/$", total2)
             
             print(total1)
             print(total2)
-            
-            if total2 < 0.1 && total1 < 0.1 {
-                self.drink1ProgressView.setProgress(Float(total1 * 10), animated: true)
-                self.drink2ProgressView.setProgress(Float(total2 * 10), animated: true)
-                print("TOP")
-            } else if total2 < 0.5 && total1 < 0.5 {
-                self.drink1ProgressView.setProgress(Float(total1 * 5), animated: true)
-                self.drink2ProgressView.setProgress(Float(total2 * 5), animated: true)
-                print("BOTTOM")
-            } else {
-                self.drink1ProgressView.setProgress(Float(total1), animated: true)
-                self.drink2ProgressView.setProgress(Float(total2), animated: true)
-                print("LAST")
-            }
             
          
         
 //        alcPerDollarLabel2.textColor = UIColor.red
         
-        resetButton.isHidden = false;
+//        resetButton.isHidden = false;
         }
     }
     
     @IBAction func reset () {
-        resetButton.isHidden = true;
+//        resetButton.isHidden = true;
         
         oz1.text = ""
         oz2.text = ""
@@ -147,9 +129,7 @@ class ViewController: UIViewController {
         
         alcPerDollarLabel1.text = ""
         alcPerDollarLabel2.text = ""
-        
-        self.drink1ProgressView.isHidden = true
-        self.drink2ProgressView.isHidden = true
+
         
         oz1.becomeFirstResponder()
         
