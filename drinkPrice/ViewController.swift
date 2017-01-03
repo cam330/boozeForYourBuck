@@ -21,13 +21,8 @@ class ViewController: UIViewController, UINavigationBarDelegate{
     
     @IBOutlet var price2: UITextField!
     
-    @IBOutlet var finalLabel1: UILabel!
-    
-    @IBOutlet var finalLabel2: UILabel!
-    
     @IBOutlet var alcPerDollarLabel1: UILabel!
-    
-//    @IBOutlet var resetButton: UIButton!
+
     @IBOutlet var alcPerDollarLabel2: UILabel!
 
     @IBOutlet var drink1View: UIView!
@@ -39,13 +34,9 @@ class ViewController: UIViewController, UINavigationBarDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // Do any additional setup after loading the view, typically from a nib.
-
+        self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "PingFang HK", size: 20.0)!]
         
         oz1.becomeFirstResponder();
-        
-//        resetButton.isHidden = true
         
         if(oz1.text != ""){
             calculateButton.isHidden = true
@@ -55,13 +46,13 @@ class ViewController: UIViewController, UINavigationBarDelegate{
         self.drink1View.layer.shadowOpacity = 0.2
         self.drink1View.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         self.drink1View.layer.shadowRadius = 1
-        self.drink1View.layer.cornerRadius = 4
+        self.drink1View.layer.cornerRadius = 5
         
         self.drink2View.layer.shadowColor = UIColor.black.cgColor
         self.drink2View.layer.shadowOpacity = 0.2
         self.drink2View.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         self.drink2View.layer.shadowRadius = 1
-        self.drink2View.layer.cornerRadius = 4
+        self.drink2View.layer.cornerRadius = 5
         
         if  UIScreen.main.bounds.height < 568.0{
             print("DOESN")
@@ -72,24 +63,17 @@ class ViewController: UIViewController, UINavigationBarDelegate{
             sorryText.text = "Sorry Doesn't work on iphone4"
             iPhone4View.addSubview(sorryText)
             UIApplication.shared.keyWindow?.addSubview(iPhone4View)
-//            self.view.addSubview(iPhone4View)
         } else {
             print("DOES")
         }
         
         print(UIScreen.main.bounds.height)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func getVal () {
 
-        
         if (oz1.text == "") || (abv1.text == "") || (price1.text == "") || (oz2.text == "") || (abv2.text == "") || (price2.text == ""){
-            print("Enter stuff")
+            print("All Fields Must Be Filled Out")
         }else {
         
         let abvPercent1 = Double(abv1.text!)! / 100
@@ -119,23 +103,14 @@ class ViewController: UIViewController, UINavigationBarDelegate{
             alcPerDollarLabel1.font = alcPerDollarLabel1.font.withSize(20)
         }
         
-        alcPerDollarLabel1.text = String(format: "%.0f%% ALC/$", total1)
-        alcPerDollarLabel2.text = String(format: "%.0f%% ALC/$", total2)
+        alcPerDollarLabel1.text = String(format: "%.1f%% ALC/$", total1)
+        alcPerDollarLabel2.text = String(format: "%.1f%% ALC/$", total2)
             
-            print(total1)
-            print(total2)
-            
-         
-        
-//        alcPerDollarLabel2.textColor = UIColor.red
-        
-//        resetButton.isHidden = false;
         }
     }
     
     @IBAction func reset () {
-//        resetButton.isHidden = true;
-        
+
         oz1.text = ""
         oz2.text = ""
         
@@ -152,7 +127,6 @@ class ViewController: UIViewController, UINavigationBarDelegate{
         alcPerDollarLabel2.font = alcPerDollarLabel2.font.withSize(25)
         alcPerDollarLabel2.textColor = #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)
 
-        
         oz1.becomeFirstResponder()
         
     }
