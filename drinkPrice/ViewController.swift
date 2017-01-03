@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationBarDelegate{
     @IBOutlet var oz1: UITextField!
 
     @IBOutlet var abv1: UITextField!
@@ -38,6 +38,8 @@ class ViewController: UIViewController {
     @IBOutlet var calculateButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
 
         
@@ -61,6 +63,21 @@ class ViewController: UIViewController {
         self.drink2View.layer.shadowRadius = 1
         self.drink2View.layer.cornerRadius = 4
         
+        if  UIScreen.main.bounds.height < 568.0{
+            print("DOESN")
+            self.oz1.resignFirstResponder()
+            let iPhone4View = UIView(frame: CGRect(x: 0, y:0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+            iPhone4View.backgroundColor = UIColor.white
+            let sorryText = UILabel(frame: CGRect(x: iPhone4View.center.x-100, y:iPhone4View.center.y-50, width:200, height: 100))
+            sorryText.text = "Sorry Doesn't work on iphone4"
+            iPhone4View.addSubview(sorryText)
+            UIApplication.shared.keyWindow?.addSubview(iPhone4View)
+//            self.view.addSubview(iPhone4View)
+        } else {
+            print("DOES")
+        }
+        
+        print(UIScreen.main.bounds.height)
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,7 +98,7 @@ class ViewController: UIViewController {
         let totalAlcohol1 = (Double(oz1.text!)! * abvPercent1)
         
         
-        let total1 = (totalAlcohol1 / Double(price1.text!)!)
+        let total1 = (totalAlcohol1 / Double(price1.text!)!) * 100
         
         let abvPercent2 = Double(abv2.text!)! / 100
         
@@ -89,20 +106,21 @@ class ViewController: UIViewController {
         let totalAlcohol2 = (Double(oz2.text!)! * abvPercent2)
         
         
-        let total2 = (totalAlcohol2 / Double(price2.text!)!)
+        let total2 = (totalAlcohol2 / Double(price2.text!)!) * 100
             
             
-        //NEED TO DO! change it from displaying color to making size bigger
         if total1 > total2 {
-            alcPerDollarLabel1.font = alcPerDollarLabel1.font.withSize(26)
-            alcPerDollarLabel2.font = alcPerDollarLabel1.font.withSize(20)
+            alcPerDollarLabel1.font = alcPerDollarLabel1.font.withSize(30)
+            alcPerDollarLabel1.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            alcPerDollarLabel2.font = alcPerDollarLabel2.font.withSize(20)
         } else {
-            alcPerDollarLabel2.font = alcPerDollarLabel1.font.withSize(26)
+            alcPerDollarLabel2.font = alcPerDollarLabel2.font.withSize(30)
+            alcPerDollarLabel2.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
             alcPerDollarLabel1.font = alcPerDollarLabel1.font.withSize(20)
         }
         
-        alcPerDollarLabel1.text = String(format: "%.3foz. ALC / $", total1)
-        alcPerDollarLabel2.text = String(format: "%.3foz. ALC/$", total2)
+        alcPerDollarLabel1.text = String(format: "%.0f%% ALC/$", total1)
+        alcPerDollarLabel2.text = String(format: "%.0f%% ALC/$", total2)
             
             print(total1)
             print(total2)
@@ -127,8 +145,12 @@ class ViewController: UIViewController {
         price1.text = ""
         price2.text = ""
         
-        alcPerDollarLabel1.text = ""
-        alcPerDollarLabel2.text = ""
+        alcPerDollarLabel1.text = "Drink 1"
+        alcPerDollarLabel1.font = alcPerDollarLabel1.font.withSize(25)
+        alcPerDollarLabel1.textColor = #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)
+        alcPerDollarLabel2.text = "Drink 2"
+        alcPerDollarLabel2.font = alcPerDollarLabel2.font.withSize(25)
+        alcPerDollarLabel2.textColor = #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)
 
         
         oz1.becomeFirstResponder()
