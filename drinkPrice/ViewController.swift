@@ -45,26 +45,32 @@ class ViewController: UIViewController, UINavigationBarDelegate{
         self.drink1View.layer.shadowColor = UIColor.black.cgColor
         self.drink1View.layer.shadowOpacity = 0.2
         self.drink1View.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        self.drink1View.layer.shadowRadius = 1
+        self.drink1View.layer.shadowRadius = 2
         self.drink1View.layer.cornerRadius = 5
         
         self.drink2View.layer.shadowColor = UIColor.black.cgColor
         self.drink2View.layer.shadowOpacity = 0.2
         self.drink2View.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        self.drink2View.layer.shadowRadius = 1
+        self.drink2View.layer.shadowRadius = 2
         self.drink2View.layer.cornerRadius = 5
         
         if  UIScreen.main.bounds.height < 568.0{
             print("DOESN")
             self.oz1.resignFirstResponder()
-            let iPhone4View = UIView(frame: CGRect(x: 0, y:0, width: self.view.frame.size.width, height: self.view.frame.size.height))
-            iPhone4View.backgroundColor = UIColor.white
-            let sorryText = UILabel(frame: CGRect(x: iPhone4View.center.x-100, y:iPhone4View.center.y-50, width:200, height: 100))
-            sorryText.text = "Sorry Doesn't work on iphone4"
-            iPhone4View.addSubview(sorryText)
+//            let iPhone4View = UIView(frame: CGRect(x: 0, y:0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+//            iPhone4View.backgroundColor = UIColor.white
+            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.extraLight)
+            let iPhone4View = UIVisualEffectView(effect: blurEffect)
+            iPhone4View.frame = CGRect(x: 0, y:0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+            let sorryText1 = UILabel(frame: CGRect(x: iPhone4View.center.x-125, y:iPhone4View.center.y-50, width:250, height: 100))
+            let sorryText2 = UILabel(frame: CGRect(x: iPhone4View.center.x-125, y:iPhone4View.center.y-25, width:250, height: 100))
+            sorryText1.text = "Sorry, but this app requires"
+            sorryText2.text = "iPhone 5 or higher :("
+            sorryText2.textAlignment = NSTextAlignment.center
+            sorryText1.textAlignment = NSTextAlignment.center
+            iPhone4View.addSubview(sorryText1)
+            iPhone4View.addSubview(sorryText2)
             UIApplication.shared.keyWindow?.addSubview(iPhone4View)
-        } else {
-            print("DOES")
         }
         
         print(UIScreen.main.bounds.height)
