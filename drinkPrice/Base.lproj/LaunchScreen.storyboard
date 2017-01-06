@@ -21,12 +21,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="qXF-Ff-cyR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FirstImg" translatesAutoresizingMaskIntoConstraints="NO" id="qXF-Ff-cyR">
+                                <rect key="frame" x="0.0" y="195" width="375" height="276"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.015383204445242882" green="0.77023881673812866" blue="0.99997013807296753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qXF-Ff-cyR" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="175" id="j81-M0-OW3"/>
+                            <constraint firstAttribute="trailing" secondItem="qXF-Ff-cyR" secondAttribute="trailing" id="jDd-Rt-FrO"/>
+                            <constraint firstItem="qXF-Ff-cyR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="jEF-0t-Zcm"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="qXF-Ff-cyR" secondAttribute="bottom" constant="196" id="wmb-QA-wBc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -35,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Splash" width="497" height="497"/>
+        <image name="FirstImg" width="459" height="429"/>
     </resources>
 </document>
