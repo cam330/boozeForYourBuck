@@ -22,15 +22,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FirstImg" translatesAutoresizingMaskIntoConstraints="NO" id="qXF-Ff-cyR">
-                                <rect key="frame" x="0.0" y="195" width="375" height="276"/>
+                                <rect key="frame" x="0.0" y="170" width="375" height="276"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Budget Booze" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1f-JS-sYL">
+                                <rect key="frame" x="16" y="454" width="343" height="42"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.015383204445242882" green="0.77023881673812866" blue="0.99997013807296753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qXF-Ff-cyR" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="175" id="j81-M0-OW3"/>
+                            <constraint firstItem="g1f-JS-sYL" firstAttribute="top" secondItem="qXF-Ff-cyR" secondAttribute="bottom" constant="8" id="9PD-7n-AU9"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="g1f-JS-sYL" secondAttribute="bottom" constant="171" id="M4e-8M-ElF"/>
+                            <constraint firstItem="g1f-JS-sYL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ODN-0r-JmD"/>
+                            <constraint firstItem="qXF-Ff-cyR" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="150" id="j81-M0-OW3"/>
                             <constraint firstAttribute="trailing" secondItem="qXF-Ff-cyR" secondAttribute="trailing" id="jDd-Rt-FrO"/>
                             <constraint firstItem="qXF-Ff-cyR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="jEF-0t-Zcm"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="qXF-Ff-cyR" secondAttribute="bottom" constant="196" id="wmb-QA-wBc"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="qXF-Ff-cyR" secondAttribute="bottom" constant="221" id="wmb-QA-wBc"/>
                         </constraints>
                     </view>
                 </viewController>

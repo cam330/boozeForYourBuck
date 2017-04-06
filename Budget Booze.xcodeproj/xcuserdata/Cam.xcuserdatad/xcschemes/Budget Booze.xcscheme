@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "32F9530F1DEB59CA0001CA33"
-               BuildableName = "drinkPrice.app"
-               BlueprintName = "drinkPrice"
-               ReferencedContainer = "container:drinkPrice.xcodeproj">
+               BuildableName = "Budget Booze.app"
+               BlueprintName = "Budget Booze"
+               ReferencedContainer = "container:Budget Booze.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "32F953261DEB59CA0001CA33"
-               BuildableName = "drinkPriceTests.xctest"
-               BlueprintName = "drinkPriceTests"
-               ReferencedContainer = "container:drinkPrice.xcodeproj">
+               BuildableName = "Budget BoozeTests.xctest"
+               BlueprintName = "Budget BoozeTests"
+               ReferencedContainer = "container:Budget Booze.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "32F953311DEB59CA0001CA33"
-               BuildableName = "drinkPriceUITests.xctest"
-               BlueprintName = "drinkPriceUITests"
-               ReferencedContainer = "container:drinkPrice.xcodeproj">
+               BuildableName = "Budget BoozeUITests.xctest"
+               BlueprintName = "Budget BoozeUITests"
+               ReferencedContainer = "container:Budget Booze.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "32F9530F1DEB59CA0001CA33"
-            BuildableName = "drinkPrice.app"
-            BlueprintName = "drinkPrice"
-            ReferencedContainer = "container:drinkPrice.xcodeproj">
+            BuildableName = "Budget Booze.app"
+            BlueprintName = "Budget Booze"
+            ReferencedContainer = "container:Budget Booze.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "32F9530F1DEB59CA0001CA33"
-            BuildableName = "drinkPrice.app"
-            BlueprintName = "drinkPrice"
-            ReferencedContainer = "container:drinkPrice.xcodeproj">
+            BuildableName = "Budget Booze.app"
+            BlueprintName = "Budget Booze"
+            ReferencedContainer = "container:Budget Booze.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "32F9530F1DEB59CA0001CA33"
-            BuildableName = "drinkPrice.app"
-            BlueprintName = "drinkPrice"
-            ReferencedContainer = "container:drinkPrice.xcodeproj">
+            BuildableName = "Budget Booze.app"
+            BlueprintName = "Budget Booze"
+            ReferencedContainer = "container:Budget Booze.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

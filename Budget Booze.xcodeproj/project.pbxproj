@@ -10,7 +10,7 @@
 		32F953141DEB59CA0001CA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F953131DEB59CA0001CA33 /* AppDelegate.swift */; };
 		32F953161DEB59CA0001CA33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F953151DEB59CA0001CA33 /* ViewController.swift */; };
 		32F953191DEB59CA0001CA33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F953171DEB59CA0001CA33 /* Main.storyboard */; };
-		32F9531C1DEB59CA0001CA33 /* drinkPrice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32F9531A1DEB59CA0001CA33 /* drinkPrice.xcdatamodeld */; };
+		32F9531C1DEB59CA0001CA33 /* Budget Booze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32F9531A1DEB59CA0001CA33 /* Budget Booze.xcdatamodeld */; };
 		32F9531E1DEB59CA0001CA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F9531D1DEB59CA0001CA33 /* Assets.xcassets */; };
 		32F953211DEB59CA0001CA33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F9531F1DEB59CA0001CA33 /* LaunchScreen.storyboard */; };
 		32F9532C1DEB59CA0001CA33 /* drinkPriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9532B1DEB59CA0001CA33 /* drinkPriceTests.swift */; };
@@ -35,18 +35,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32F953101DEB59CA0001CA33 /* drinkPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drinkPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F953101DEB59CA0001CA33 /* Budget Booze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Budget Booze.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F953131DEB59CA0001CA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32F953151DEB59CA0001CA33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32F953181DEB59CA0001CA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		32F9531B1DEB59CA0001CA33 /* drinkPrice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = drinkPrice.xcdatamodel; sourceTree = "<group>"; };
+		32F9531B1DEB59CA0001CA33 /* Budget Booze.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Budget Booze.xcdatamodel"; sourceTree = "<group>"; };
 		32F9531D1DEB59CA0001CA33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32F953201DEB59CA0001CA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32F953221DEB59CA0001CA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32F953271DEB59CA0001CA33 /* drinkPriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drinkPriceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F953271DEB59CA0001CA33 /* Budget BoozeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Budget BoozeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F9532B1DEB59CA0001CA33 /* drinkPriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkPriceTests.swift; sourceTree = "<group>"; };
 		32F9532D1DEB59CA0001CA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32F953321DEB59CA0001CA33 /* drinkPriceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drinkPriceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F953321DEB59CA0001CA33 /* Budget BoozeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Budget BoozeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F953361DEB59CA0001CA33 /* drinkPriceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkPriceUITests.swift; sourceTree = "<group>"; };
 		32F953381DEB59CA0001CA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,9 +79,9 @@
 		32F953071DEB59CA0001CA33 = {
 			isa = PBXGroup;
 			children = (
-				32F953121DEB59CA0001CA33 /* drinkPrice */,
-				32F9532A1DEB59CA0001CA33 /* drinkPriceTests */,
-				32F953351DEB59CA0001CA33 /* drinkPriceUITests */,
+				32F953121DEB59CA0001CA33 /* Budget Booze */,
+				32F9532A1DEB59CA0001CA33 /* Budget BoozeTests */,
+				32F953351DEB59CA0001CA33 /* Budget BoozeUITests */,
 				32F953111DEB59CA0001CA33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,14 +89,14 @@
 		32F953111DEB59CA0001CA33 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32F953101DEB59CA0001CA33 /* drinkPrice.app */,
-				32F953271DEB59CA0001CA33 /* drinkPriceTests.xctest */,
-				32F953321DEB59CA0001CA33 /* drinkPriceUITests.xctest */,
+				32F953101DEB59CA0001CA33 /* Budget Booze.app */,
+				32F953271DEB59CA0001CA33 /* Budget BoozeTests.xctest */,
+				32F953321DEB59CA0001CA33 /* Budget BoozeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		32F953121DEB59CA0001CA33 /* drinkPrice */ = {
+		32F953121DEB59CA0001CA33 /* Budget Booze */ = {
 			isa = PBXGroup;
 			children = (
 				32F953131DEB59CA0001CA33 /* AppDelegate.swift */,
@@ -105,35 +105,38 @@
 				32F9531D1DEB59CA0001CA33 /* Assets.xcassets */,
 				32F9531F1DEB59CA0001CA33 /* LaunchScreen.storyboard */,
 				32F953221DEB59CA0001CA33 /* Info.plist */,
-				32F9531A1DEB59CA0001CA33 /* drinkPrice.xcdatamodeld */,
+				32F9531A1DEB59CA0001CA33 /* Budget Booze.xcdatamodeld */,
 			);
+			name = "Budget Booze";
 			path = drinkPrice;
 			sourceTree = "<group>";
 		};
-		32F9532A1DEB59CA0001CA33 /* drinkPriceTests */ = {
+		32F9532A1DEB59CA0001CA33 /* Budget BoozeTests */ = {
 			isa = PBXGroup;
 			children = (
 				32F9532B1DEB59CA0001CA33 /* drinkPriceTests.swift */,
 				32F9532D1DEB59CA0001CA33 /* Info.plist */,
 			);
+			name = "Budget BoozeTests";
 			path = drinkPriceTests;
 			sourceTree = "<group>";
 		};
-		32F953351DEB59CA0001CA33 /* drinkPriceUITests */ = {
+		32F953351DEB59CA0001CA33 /* Budget BoozeUITests */ = {
 			isa = PBXGroup;
 			children = (
 				32F953361DEB59CA0001CA33 /* drinkPriceUITests.swift */,
 				32F953381DEB59CA0001CA33 /* Info.plist */,
 			);
+			name = "Budget BoozeUITests";
 			path = drinkPriceUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		32F9530F1DEB59CA0001CA33 /* drinkPrice */ = {
+		32F9530F1DEB59CA0001CA33 /* Budget Booze */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32F9533B1DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "drinkPrice" */;
+			buildConfigurationList = 32F9533B1DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "Budget Booze" */;
 			buildPhases = (
 				32F9530C1DEB59CA0001CA33 /* Sources */,
 				32F9530D1DEB59CA0001CA33 /* Frameworks */,
@@ -143,14 +146,14 @@
 			);
 			dependencies = (
 			);
-			name = drinkPrice;
+			name = "Budget Booze";
 			productName = drinkPrice;
-			productReference = 32F953101DEB59CA0001CA33 /* drinkPrice.app */;
+			productReference = 32F953101DEB59CA0001CA33 /* Budget Booze.app */;
 			productType = "com.apple.product-type.application";
 		};
-		32F953261DEB59CA0001CA33 /* drinkPriceTests */ = {
+		32F953261DEB59CA0001CA33 /* Budget BoozeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32F9533E1DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "drinkPriceTests" */;
+			buildConfigurationList = 32F9533E1DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "Budget BoozeTests" */;
 			buildPhases = (
 				32F953231DEB59CA0001CA33 /* Sources */,
 				32F953241DEB59CA0001CA33 /* Frameworks */,
@@ -161,14 +164,14 @@
 			dependencies = (
 				32F953291DEB59CA0001CA33 /* PBXTargetDependency */,
 			);
-			name = drinkPriceTests;
+			name = "Budget BoozeTests";
 			productName = drinkPriceTests;
-			productReference = 32F953271DEB59CA0001CA33 /* drinkPriceTests.xctest */;
+			productReference = 32F953271DEB59CA0001CA33 /* Budget BoozeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		32F953311DEB59CA0001CA33 /* drinkPriceUITests */ = {
+		32F953311DEB59CA0001CA33 /* Budget BoozeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32F953411DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "drinkPriceUITests" */;
+			buildConfigurationList = 32F953411DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "Budget BoozeUITests" */;
 			buildPhases = (
 				32F9532E1DEB59CA0001CA33 /* Sources */,
 				32F9532F1DEB59CA0001CA33 /* Frameworks */,
@@ -179,9 +182,9 @@
 			dependencies = (
 				32F953341DEB59CA0001CA33 /* PBXTargetDependency */,
 			);
-			name = drinkPriceUITests;
+			name = "Budget BoozeUITests";
 			productName = drinkPriceUITests;
-			productReference = 32F953321DEB59CA0001CA33 /* drinkPriceUITests.xctest */;
+			productReference = 32F953321DEB59CA0001CA33 /* Budget BoozeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 32F9530B1DEB59CA0001CA33 /* Build configuration list for PBXProject "drinkPrice" */;
+			buildConfigurationList = 32F9530B1DEB59CA0001CA33 /* Build configuration list for PBXProject "Budget Booze" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -224,9 +227,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				32F9530F1DEB59CA0001CA33 /* drinkPrice */,
-				32F953261DEB59CA0001CA33 /* drinkPriceTests */,
-				32F953311DEB59CA0001CA33 /* drinkPriceUITests */,
+				32F9530F1DEB59CA0001CA33 /* Budget Booze */,
+				32F953261DEB59CA0001CA33 /* Budget BoozeTests */,
+				32F953311DEB59CA0001CA33 /* Budget BoozeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32F9531C1DEB59CA0001CA33 /* drinkPrice.xcdatamodeld in Sources */,
+				32F9531C1DEB59CA0001CA33 /* Budget Booze.xcdatamodeld in Sources */,
 				32F953161DEB59CA0001CA33 /* ViewController.swift in Sources */,
 				32F953141DEB59CA0001CA33 /* AppDelegate.swift in Sources */,
 			);
@@ -290,12 +293,12 @@
 /* Begin PBXTargetDependency section */
 		32F953291DEB59CA0001CA33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 32F9530F1DEB59CA0001CA33 /* drinkPrice */;
+			target = 32F9530F1DEB59CA0001CA33 /* Budget Booze */;
 			targetProxy = 32F953281DEB59CA0001CA33 /* PBXContainerItemProxy */;
 		};
 		32F953341DEB59CA0001CA33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 32F9530F1DEB59CA0001CA33 /* drinkPrice */;
+			target = 32F9530F1DEB59CA0001CA33 /* Budget Booze */;
 			targetProxy = 32F953331DEB59CA0001CA33 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -420,10 +423,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77BY68R34P;
-				INFOPLIST_FILE = drinkPrice/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/drinkPrice/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cam.drinkPrice;
+				PRODUCT_BUNDLE_IDENTIFIER = "cam.Budget Booze";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -434,10 +437,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77BY68R34P;
-				INFOPLIST_FILE = drinkPrice/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/drinkPrice/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cam.drinkPrice;
+				PRODUCT_BUNDLE_IDENTIFIER = "cam.Budget Booze";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -453,7 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cam.drinkPriceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/drinkPrice.app/drinkPrice";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Budget Booze.app/Budget Booze";
 			};
 			name = Debug;
 		};
@@ -467,7 +470,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cam.drinkPriceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/drinkPrice.app/drinkPrice";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Budget Booze.app/Budget Booze";
 			};
 			name = Release;
 		};
@@ -500,7 +503,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		32F9530B1DEB59CA0001CA33 /* Build configuration list for PBXProject "drinkPrice" */ = {
+		32F9530B1DEB59CA0001CA33 /* Build configuration list for PBXProject "Budget Booze" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32F953391DEB59CA0001CA33 /* Debug */,
@@ -509,7 +512,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32F9533B1DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "drinkPrice" */ = {
+		32F9533B1DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "Budget Booze" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32F9533C1DEB59CA0001CA33 /* Debug */,
@@ -518,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32F9533E1DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "drinkPriceTests" */ = {
+		32F9533E1DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "Budget BoozeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32F9533F1DEB59CA0001CA33 /* Debug */,
@@ -527,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32F953411DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "drinkPriceUITests" */ = {
+		32F953411DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "Budget BoozeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32F953421DEB59CA0001CA33 /* Debug */,
@@ -539,13 +542,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		32F9531A1DEB59CA0001CA33 /* drinkPrice.xcdatamodeld */ = {
+		32F9531A1DEB59CA0001CA33 /* Budget Booze.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				32F9531B1DEB59CA0001CA33 /* drinkPrice.xcdatamodel */,
+				32F9531B1DEB59CA0001CA33 /* Budget Booze.xcdatamodel */,
 			);
-			currentVersion = 32F9531B1DEB59CA0001CA33 /* drinkPrice.xcdatamodel */;
-			path = drinkPrice.xcdatamodeld;
+			currentVersion = 32F9531B1DEB59CA0001CA33 /* Budget Booze.xcdatamodel */;
+			path = "Budget Booze.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

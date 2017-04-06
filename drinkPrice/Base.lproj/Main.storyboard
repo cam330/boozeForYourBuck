@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Drink Special-->
+        <!--Budget Booze-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="drinkPrice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Budget_Booze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -265,7 +265,7 @@
                             <constraint firstItem="h5k-Lq-6v1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zBk-v2-A96"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Drink Special" id="heD-ww-waL">
+                    <navigationItem key="navigationItem" title="Budget Booze" id="heD-ww-waL">
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="ZGi-rY-Igz">
                             <color key="tintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
