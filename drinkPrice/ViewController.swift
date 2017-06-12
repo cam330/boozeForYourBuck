@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SACountingLabel
 
-class ViewController: UIViewController, UINavigationBarDelegate{
+class ViewController: UIViewController, UINavigationBarDelegate, UITextFieldDelegate{
     @IBOutlet var oz1: UITextField!
 
     @IBOutlet var abv1: UITextField!
@@ -21,18 +22,38 @@ class ViewController: UIViewController, UINavigationBarDelegate{
     
     @IBOutlet var price2: UITextField!
     
-    @IBOutlet var alcPerDollarLabel1: UILabel!
+    @IBOutlet var alcPerDollarLabel1: SACountingLabel!
 
-    @IBOutlet var alcPerDollarLabel2: UILabel!
+    @IBOutlet var alcPerDollarLabel2: SACountingLabel!
 
     @IBOutlet var drink1View: UIView!
     @IBOutlet var drink2View: UIView!
-
     
+    @IBOutlet var textFields: [UITextField]!
     
     @IBOutlet var calculateButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        calculateButton.backgroundColor = #colorLiteral(red: 1, green: 0.7607843137, blue: 0.1490196078, alpha: 1)
+        calculateButton.setTitle("Next", for: .normal)
+        
+        
+        oz1.delegate = self
+        oz2.delegate = self
+        abv1.delegate = self
+        abv2.delegate = self
+        price1.delegate = self
+        price2.delegate = self
+        
+        addBottomLayerToTheView(view: oz1)
+        addBottomLayerToTheView(view: oz2)
+        addBottomLayerToTheView(view: price1)
+        addBottomLayerToTheView(view: price2)
+        addBottomLayerToTheView(view: abv1)
+        addBottomLayerToTheView(view: abv2)
+//
+//        oz1.layer.masksToBounds = true
         
         self.navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "PingFang HK", size: 20.0)!]
         
@@ -76,8 +97,50 @@ class ViewController: UIViewController, UINavigationBarDelegate{
         print(UIScreen.main.bounds.height)
     }
     
+    func addBottomLayerToTheView(view: UIView){
+        let border1 = CALayer()
+        let width = CGFloat(1.5)
+        border1.borderColor = UIColor.lightGray.cgColor
+        border1.frame = CGRect(x: 0, y: oz1.frame.size.height - width, width:  oz1.frame.size.width, height: oz1.frame.size.height)
+        border1.borderWidth = width;
+        view.layer.addSublayer(border1)
+    }
+    
+    func findEmptyField() -> UITextField? {
+        for textField in textFields {
+            if (textField.text?.isEmpty)! {
+                return textField
+            }
+        }
+        return nil
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let newString = NSString(string: textField.text!).replacingCharacters(in: range, with: string)
+        print(newString)
+        print(newString.characters.count)
+        
+        if newString.characters.count > 0 {
+            if let emptyField = findEmptyField() {
+                // focus emptyField or give a message
+            }else {
+                print("DONEOEN")
+            }
+        }
+        return true
+    }
+    
     @IBAction func getVal () {
 
+        if let emptyField = findEmptyField() {
+            // focus emptyField or give a message
+            print(textFields.index(of: emptyField)!)
+            emptyField.becomeFirstResponder()
+        }
+        
+//        print(textFields)
+        
         if (oz1.text == "") || (abv1.text == "") || (price1.text == "") || (oz2.text == "") || (abv2.text == "") || (price2.text == ""){
             print("All Fields Must Be Filled Out")
         }else {
@@ -89,7 +152,7 @@ class ViewController: UIViewController, UINavigationBarDelegate{
         
         
         let total1 = (totalAlcohol1 / Double(price1.text!)!) * 100
-        
+    
         let abvPercent2 = Double(abv2.text!)! / 100
         
         
@@ -97,20 +160,27 @@ class ViewController: UIViewController, UINavigationBarDelegate{
         
         
         let total2 = (totalAlcohol2 / Double(price2.text!)!) * 100
+    
+            print(totalAlcohol1)
+            print(total1)
             
+            alcPerDollarLabel1.format = "%.1f%% Alcohol/$"
+            alcPerDollarLabel1.countFrom(fromValue: 0, to: Float(total1), withDuration: 0.6, andAnimationType: .EaseOut, andCountingType: .Custom)
             
-        if total1 > total2 {
-            alcPerDollarLabel1.font = alcPerDollarLabel1.font.withSize(30)
-            alcPerDollarLabel1.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-            alcPerDollarLabel2.font = alcPerDollarLabel2.font.withSize(20)
-        } else {
-            alcPerDollarLabel2.font = alcPerDollarLabel2.font.withSize(30)
-            alcPerDollarLabel2.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-            alcPerDollarLabel1.font = alcPerDollarLabel1.font.withSize(20)
-        }
-        
-        alcPerDollarLabel1.text = String(format: "%.1f%% ALC/$", total1)
-        alcPerDollarLabel2.text = String(format: "%.1f%% ALC/$", total2)
+            alcPerDollarLabel2.format = "%.1f%% Alcohol/$6"
+            alcPerDollarLabel2.countFrom(fromValue: 0, to: Float(total2), withDuration: 0.6, andAnimationType: .EaseOut, andCountingType: .Custom)
+            
+            if total1 > total2 {
+                alcPerDollarLabel1.font = alcPerDollarLabel1.font.withSize(30)
+                alcPerDollarLabel1.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                alcPerDollarLabel2.font = alcPerDollarLabel2.font.withSize(20)
+            } else {
+                alcPerDollarLabel2.font = alcPerDollarLabel2.font.withSize(30)
+                alcPerDollarLabel2.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                alcPerDollarLabel1.font = alcPerDollarLabel1.font.withSize(20)
+            }
+//        alcPerDollarLabel1.text = String(format: "%.1f%% ALC/$")
+//        alcPerDollarLabel2.text = String(format: "%.1f%% ALC/$", total2)
             
         }
     }

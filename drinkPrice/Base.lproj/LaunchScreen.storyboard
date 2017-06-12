@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,25 +22,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FirstImg" translatesAutoresizingMaskIntoConstraints="NO" id="qXF-Ff-cyR">
-                                <rect key="frame" x="0.0" y="170" width="375" height="276"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="UHC-Ah-Okt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Budget Booze" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1f-JS-sYL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget Booze" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1f-JS-sYL">
                                 <rect key="frame" x="16" y="454" width="343" height="42"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="NLa-iI-NQv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="37"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2017-01-05 at 3.56.05 PM" translatesAutoresizingMaskIntoConstraints="NO" id="qXF-Ff-cyR">
+                                <rect key="frame" x="78" y="183" width="218" height="176"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.015383204445242882" green="0.77023881673812866" blue="0.99997013807296753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="g1f-JS-sYL" firstAttribute="top" secondItem="qXF-Ff-cyR" secondAttribute="bottom" constant="8" id="9PD-7n-AU9"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="g1f-JS-sYL" secondAttribute="bottom" constant="171" id="M4e-8M-ElF"/>
-                            <constraint firstItem="g1f-JS-sYL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ODN-0r-JmD"/>
-                            <constraint firstItem="qXF-Ff-cyR" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="150" id="j81-M0-OW3"/>
-                            <constraint firstAttribute="trailing" secondItem="qXF-Ff-cyR" secondAttribute="trailing" id="jDd-Rt-FrO"/>
-                            <constraint firstItem="qXF-Ff-cyR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="jEF-0t-Zcm"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="qXF-Ff-cyR" secondAttribute="bottom" constant="221" id="wmb-QA-wBc"/>
+                            <constraint firstItem="qXF-Ff-cyR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="62" id="4W4-1q-kAz"/>
+                            <constraint firstItem="UHC-Ah-Okt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4jo-DB-rVp"/>
+                            <constraint firstItem="g1f-JS-sYL" firstAttribute="top" secondItem="qXF-Ff-cyR" secondAttribute="bottom" constant="95" id="Kgu-sC-i6j"/>
+                            <constraint firstAttribute="trailing" secondItem="UHC-Ah-Okt" secondAttribute="trailing" id="T5h-KO-OMU"/>
+                            <constraint firstItem="UHC-Ah-Okt" firstAttribute="centerX" secondItem="qXF-Ff-cyR" secondAttribute="centerX" id="U0s-sQ-9zA"/>
+                            <constraint firstItem="g1f-JS-sYL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="bbV-nO-uem"/>
+                            <constraint firstItem="qXF-Ff-cyR" firstAttribute="centerX" secondItem="g1f-JS-sYL" secondAttribute="centerX" id="iNh-6Z-XjK"/>
+                            <constraint firstItem="qXF-Ff-cyR" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="163" id="kop-nx-EKD"/>
+                            <constraint firstItem="UHC-Ah-Okt" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="pGr-vd-7AS"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="g1f-JS-sYL" secondAttribute="bottom" constant="171" id="qyr-yE-yGI"/>
+                            <constraint firstItem="UHC-Ah-Okt" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="sJe-Y7-0Am"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -49,6 +59,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FirstImg" width="459" height="429"/>
+        <image name="Background" width="1024" height="768"/>
+        <image name="Screen Shot 2017-01-05 at 3.56.05 PM" width="277" height="297"/>
     </resources>
 </document>

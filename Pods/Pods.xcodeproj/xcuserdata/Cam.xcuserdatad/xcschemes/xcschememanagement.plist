@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Budget Booze.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Budget BoozeTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Budget BoozeUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SACountingLabel-SACountingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SACountingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>111A31B5DB496145F94D196230B9EB10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2DEF09F96A2D4D102E3BF5044008457D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7E3CBA0FB77AEEFE8784DC66FA1AB1FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AF90891D217E808192CED29E48CCF13D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0106DF7B69418C0CE32A140C4E2FB81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

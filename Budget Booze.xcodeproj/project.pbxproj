@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32073EE31E96EB660079AB9D /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32073EE21E96EB660079AB9D /* Count.swift */; };
 		32F953141DEB59CA0001CA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F953131DEB59CA0001CA33 /* AppDelegate.swift */; };
 		32F953161DEB59CA0001CA33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F953151DEB59CA0001CA33 /* ViewController.swift */; };
 		32F953191DEB59CA0001CA33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F953171DEB59CA0001CA33 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 		32F953211DEB59CA0001CA33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F9531F1DEB59CA0001CA33 /* LaunchScreen.storyboard */; };
 		32F9532C1DEB59CA0001CA33 /* drinkPriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9532B1DEB59CA0001CA33 /* drinkPriceTests.swift */; };
 		32F953371DEB59CA0001CA33 /* drinkPriceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F953361DEB59CA0001CA33 /* drinkPriceUITests.swift */; };
+		3B8774175F3B74ED677F9E68 /* Pods_Budget_BoozeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96F8F4E13ABE052B6EABB14 /* Pods_Budget_BoozeTests.framework */; };
+		74449C90E380D7669849E085 /* Pods_Budget_Booze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A9FCAE8A4B603C5A7C08BC /* Pods_Budget_Booze.framework */; };
+		F3372B02E126CE6924FAD593 /* Pods_Budget_BoozeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FA035B95E45908A2608B94 /* Pods_Budget_BoozeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1219D9B446DFA46753C03019 /* Pods-Budget BoozeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budget BoozeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Budget BoozeUITests/Pods-Budget BoozeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		32073EE21E96EB660079AB9D /* Count.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Count.swift; sourceTree = "<group>"; };
 		32F953101DEB59CA0001CA33 /* Budget Booze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Budget Booze.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F953131DEB59CA0001CA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32F953151DEB59CA0001CA33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		32F953321DEB59CA0001CA33 /* Budget BoozeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Budget BoozeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F953361DEB59CA0001CA33 /* drinkPriceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkPriceUITests.swift; sourceTree = "<group>"; };
 		32F953381DEB59CA0001CA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58FA035B95E45908A2608B94 /* Pods_Budget_BoozeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Budget_BoozeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		727E52AD036BE6D264A4443C /* Pods-Budget Booze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budget Booze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Budget Booze/Pods-Budget Booze.debug.xcconfig"; sourceTree = "<group>"; };
+		83A9FCAE8A4B603C5A7C08BC /* Pods_Budget_Booze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Budget_Booze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		957146EC9AA937514F927F12 /* Pods-Budget BoozeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budget BoozeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Budget BoozeUITests/Pods-Budget BoozeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3F9A912EA4EB4DC75997F94 /* Pods-Budget BoozeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budget BoozeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Budget BoozeTests/Pods-Budget BoozeTests.release.xcconfig"; sourceTree = "<group>"; };
+		C96F8F4E13ABE052B6EABB14 /* Pods_Budget_BoozeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Budget_BoozeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01007044971DD0F75F6A6C2 /* Pods-Budget BoozeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budget BoozeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Budget BoozeTests/Pods-Budget BoozeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D862AA0C85F3EE8AC307801D /* Pods-Budget Booze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budget Booze.release.xcconfig"; path = "Pods/Target Support Files/Pods-Budget Booze/Pods-Budget Booze.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74449C90E380D7669849E085 /* Pods_Budget_Booze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8774175F3B74ED677F9E68 /* Pods_Budget_BoozeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3372B02E126CE6924FAD593 /* Pods_Budget_BoozeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				32F9532A1DEB59CA0001CA33 /* Budget BoozeTests */,
 				32F953351DEB59CA0001CA33 /* Budget BoozeUITests */,
 				32F953111DEB59CA0001CA33 /* Products */,
+				DF1193000508561BF1670236 /* Pods */,
+				651DECA82F58F0EF162303F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +121,7 @@
 				32F953131DEB59CA0001CA33 /* AppDelegate.swift */,
 				32F953151DEB59CA0001CA33 /* ViewController.swift */,
 				32F953171DEB59CA0001CA33 /* Main.storyboard */,
+				32073EE21E96EB660079AB9D /* Count.swift */,
 				32F9531D1DEB59CA0001CA33 /* Assets.xcassets */,
 				32F9531F1DEB59CA0001CA33 /* LaunchScreen.storyboard */,
 				32F953221DEB59CA0001CA33 /* Info.plist */,
@@ -131,6 +151,29 @@
 			path = drinkPriceUITests;
 			sourceTree = "<group>";
 		};
+		651DECA82F58F0EF162303F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83A9FCAE8A4B603C5A7C08BC /* Pods_Budget_Booze.framework */,
+				C96F8F4E13ABE052B6EABB14 /* Pods_Budget_BoozeTests.framework */,
+				58FA035B95E45908A2608B94 /* Pods_Budget_BoozeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF1193000508561BF1670236 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				727E52AD036BE6D264A4443C /* Pods-Budget Booze.debug.xcconfig */,
+				D862AA0C85F3EE8AC307801D /* Pods-Budget Booze.release.xcconfig */,
+				D01007044971DD0F75F6A6C2 /* Pods-Budget BoozeTests.debug.xcconfig */,
+				B3F9A912EA4EB4DC75997F94 /* Pods-Budget BoozeTests.release.xcconfig */,
+				1219D9B446DFA46753C03019 /* Pods-Budget BoozeUITests.debug.xcconfig */,
+				957146EC9AA937514F927F12 /* Pods-Budget BoozeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32F9533B1DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "Budget Booze" */;
 			buildPhases = (
+				2BF47865D3AA25FF5EF0A0B2 /* [CP] Check Pods Manifest.lock */,
 				32F9530C1DEB59CA0001CA33 /* Sources */,
 				32F9530D1DEB59CA0001CA33 /* Frameworks */,
 				32F9530E1DEB59CA0001CA33 /* Resources */,
+				0B821402F46F0154B6FE1E30 /* [CP] Embed Pods Frameworks */,
+				A5547947F3D87AE885B4D860 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32F9533E1DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "Budget BoozeTests" */;
 			buildPhases = (
+				4A4DA9E82FD666014F903BD5 /* [CP] Check Pods Manifest.lock */,
 				32F953231DEB59CA0001CA33 /* Sources */,
 				32F953241DEB59CA0001CA33 /* Frameworks */,
 				32F953251DEB59CA0001CA33 /* Resources */,
+				C1DAD5C8E9A51E67D7682383 /* [CP] Embed Pods Frameworks */,
+				2A3C01157C12C14F1E88D464 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32F953411DEB59CA0001CA33 /* Build configuration list for PBXNativeTarget "Budget BoozeUITests" */;
 			buildPhases = (
+				936A4168317F9F3C77727907 /* [CP] Check Pods Manifest.lock */,
 				32F9532E1DEB59CA0001CA33 /* Sources */,
 				32F9532F1DEB59CA0001CA33 /* Frameworks */,
 				32F953301DEB59CA0001CA33 /* Resources */,
+				AA1BF9671F86047640C8EFF7 /* [CP] Embed Pods Frameworks */,
+				8E61439A72949C933CE8D4E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +313,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B821402F46F0154B6FE1E30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Budget Booze/Pods-Budget Booze-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A3C01157C12C14F1E88D464 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Budget BoozeTests/Pods-Budget BoozeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BF47865D3AA25FF5EF0A0B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A4DA9E82FD666014F903BD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E61439A72949C933CE8D4E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Budget BoozeUITests/Pods-Budget BoozeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		936A4168317F9F3C77727907 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5547947F3D87AE885B4D860 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Budget Booze/Pods-Budget Booze-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1BF9671F86047640C8EFF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Budget BoozeUITests/Pods-Budget BoozeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DAD5C8E9A51E67D7682383 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Budget BoozeTests/Pods-Budget BoozeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32F9530C1DEB59CA0001CA33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,6 +459,7 @@
 				32F9531C1DEB59CA0001CA33 /* Budget Booze.xcdatamodeld in Sources */,
 				32F953161DEB59CA0001CA33 /* ViewController.swift in Sources */,
 				32F953141DEB59CA0001CA33 /* AppDelegate.swift in Sources */,
+				32073EE31E96EB660079AB9D /* Count.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,8 +611,10 @@
 		};
 		32F9533C1DEB59CA0001CA33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 727E52AD036BE6D264A4443C /* Pods-Budget Booze.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 77BY68R34P;
 				INFOPLIST_FILE = "$(SRCROOT)/drinkPrice/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -434,8 +627,10 @@
 		};
 		32F9533D1DEB59CA0001CA33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D862AA0C85F3EE8AC307801D /* Pods-Budget Booze.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 77BY68R34P;
 				INFOPLIST_FILE = "$(SRCROOT)/drinkPrice/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -448,6 +643,7 @@
 		};
 		32F9533F1DEB59CA0001CA33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D01007044971DD0F75F6A6C2 /* Pods-Budget BoozeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +658,7 @@
 		};
 		32F953401DEB59CA0001CA33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F9A912EA4EB4DC75997F94 /* Pods-Budget BoozeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -476,6 +673,7 @@
 		};
 		32F953421DEB59CA0001CA33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1219D9B446DFA46753C03019 /* Pods-Budget BoozeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = drinkPriceUITests/Info.plist;
@@ -489,6 +687,7 @@
 		};
 		32F953431DEB59CA0001CA33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957146EC9AA937514F927F12 /* Pods-Budget BoozeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = drinkPriceUITests/Info.plist;
