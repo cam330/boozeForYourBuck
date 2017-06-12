@@ -31,9 +31,13 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextFieldDele
     
     @IBOutlet var textFields: [UITextField]!
     
+    var filledFields:Bool!
+    
     @IBOutlet var calculateButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        filledFields = false;
         
         calculateButton.backgroundColor = #colorLiteral(red: 1, green: 0.7607843137, blue: 0.1490196078, alpha: 1)
         calculateButton.setTitle("Next", for: .normal)
@@ -45,6 +49,13 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextFieldDele
         abv2.delegate = self
         price1.delegate = self
         price2.delegate = self
+        
+        oz1.addTarget(self, action: #selector(self.textFieldDidChange), for: .editingChanged)
+        oz2.addTarget(self, action: #selector(self.textFieldDidChange), for: .editingChanged)
+        abv1.addTarget(self, action: #selector(self.textFieldDidChange), for: .editingChanged)
+        abv2.addTarget(self, action: #selector(self.textFieldDidChange), for: .editingChanged)
+        price1.addTarget(self, action: #selector(self.textFieldDidChange), for: .editingChanged)
+        price2.addTarget(self, action: #selector(self.textFieldDidChange), for: .editingChanged)
         
         addBottomLayerToTheView(view: oz1)
         addBottomLayerToTheView(view: oz2)
@@ -97,6 +108,18 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextFieldDele
         print(UIScreen.main.bounds.height)
     }
     
+    func textFieldDidChange(textfield: UITextField) {
+        if (oz1.text == "") || (abv1.text == "") || (price1.text == "") || (oz2.text == "") || (abv2.text == "") || (price2.text == ""){
+            print("All Fields Must Be Filled Out")
+            calculateButton.backgroundColor = #colorLiteral(red: 1, green: 0.7607843137, blue: 0.1490196078, alpha: 1)
+            calculateButton.setTitle("Next", for: .normal)
+        } else {
+            filledFields = true;
+            calculateButton.backgroundColor = #colorLiteral(red: 1, green: 0.1921568627, blue: 0, alpha: 1)
+            calculateButton.setTitle("Calculate", for: .normal)
+        }
+    }
+    
     func addBottomLayerToTheView(view: UIView){
         let border1 = CALayer()
         let width = CGFloat(1.5)
@@ -118,15 +141,30 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextFieldDele
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         let newString = NSString(string: textField.text!).replacingCharacters(in: range, with: string)
-        print(newString)
-        print(newString.characters.count)
         
+        calculateButton.backgroundColor = #colorLiteral(red: 1, green: 0.1921568627, blue: 0, alpha: 1)
+        calculateButton.setTitle("Calculate", for: .normal)
         if newString.characters.count > 0 {
-            if let emptyField = findEmptyField() {
-                // focus emptyField or give a message
-            }else {
-                print("DONEOEN")
+            calculateButton.backgroundColor = #colorLiteral(red: 1, green: 0.1921568627, blue: 0, alpha: 1)
+            calculateButton.setTitle("Calculate", for: .normal)
+//            for textField in textFields {
+//                if (textField.text?.isEmpty)! {
+//                    print("ONE OR MORE")
+//                    calculateButton.backgroundColor = #colorLiteral(red: 1, green: 0.7607843137, blue: 0.1490196078, alpha: 1)
+//                    calculateButton.setTitle("Next", for: .normal)
+//                } else {
+//                    print("None onr ON")
+//                    calculateButton.backgroundColor = #colorLiteral(red: 1, green: 0.1921568627, blue: 0, alpha: 1)
+//                    calculateButton.setTitle("Calculate", for: .normal)
+//                }
+//            }
+            if (oz1.text == "") || (abv1.text == "") || (price1.text == "") || (oz2.text == "") || (abv2.text == "") || (price2.text == ""){
+                calculateButton.backgroundColor = #colorLiteral(red: 1, green: 0.7607843137, blue: 0.1490196078, alpha: 1)
+                calculateButton.setTitle("Next", for: .normal)
             }
+        } else {
+            calculateButton.backgroundColor = #colorLiteral(red: 1, green: 0.7607843137, blue: 0.1490196078, alpha: 1)
+            calculateButton.setTitle("Next", for: .normal)
         }
         return true
     }
