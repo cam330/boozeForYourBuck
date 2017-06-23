@@ -205,7 +205,7 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextFieldDele
             alcPerDollarLabel1.format = "%.1f%% Alcohol/$"
             alcPerDollarLabel1.countFrom(fromValue: 0, to: Float(total1), withDuration: 0.6, andAnimationType: .EaseOut, andCountingType: .Custom)
             
-            alcPerDollarLabel2.format = "%.1f%% Alcohol/$6"
+            alcPerDollarLabel2.format = "%.1f%% Alcohol/$"
             alcPerDollarLabel2.countFrom(fromValue: 0, to: Float(total2), withDuration: 0.6, andAnimationType: .EaseOut, andCountingType: .Custom)
             
             if total1 > total2 {
@@ -224,6 +224,9 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextFieldDele
     }
     
     @IBAction func reset () {
+        
+        calculateButton.backgroundColor = #colorLiteral(red: 1, green: 0.7607843137, blue: 0.1490196078, alpha: 1)
+        calculateButton.setTitle("Next", for: .normal)
 
         oz1.text = ""
         oz2.text = ""
