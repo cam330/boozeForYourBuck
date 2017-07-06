@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FontAwesome.swift-FontAwesome.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FontAwesome.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Budget Booze.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,22 +47,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2DEF09F96A2D4D102E3BF5044008457D</key>
+		<key>5471AF28F09F980591F1D012AD5310B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E3CBA0FB77AEEFE8784DC66FA1AB1FA</key>
+		<key>77979430716929ED71E6E262A9F9A184</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AF90891D217E808192CED29E48CCF13D</key>
+		<key>84607506985910D4497D3433328558CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B0106DF7B69418C0CE32A140C4E2FB81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C74D47B051BF84CA30E0723F127F42AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F248FF3462D95660BD7E5B076B6CDE2F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

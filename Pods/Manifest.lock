@@ -1,12 +1,15 @@
 PODS:
+  - FontAwesome.swift (1.1.1)
   - SACountingLabel (0.1.1)
 
 DEPENDENCIES:
+  - FontAwesome.swift
   - SACountingLabel
 
 SPEC CHECKSUMS:
+  FontAwesome.swift: f4ff5a9199dc3b510eba5bb377e834f159aef358
   SACountingLabel: 6b0c2a177b77e65ea63772e50f4d4285bb6d5a71
 
-PODFILE CHECKSUM: cd8523d34548388e69d3e797791896698ab8aa66
+PODFILE CHECKSUM: 7abbff56dff61827dde70d341b1737572a464121
 
 COCOAPODS: 1.2.0

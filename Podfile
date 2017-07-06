@@ -2,6 +2,7 @@
 # platform :ios, '9.0'
 
 pod "SACountingLabel"
+pod 'FontAwesome.swift'
 
 target 'Budget Booze' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
